@@ -1,0 +1,8 @@
+class CreateBorrowedItems < ActiveRecord::Migration[5.0]
+  def change
+    create_table :borrowed_items do |t|
+
+      t.timestamps
+    end
+  end
+end
