@@ -26,9 +26,13 @@ class Api::UserController < ApplicationController
    	def register
       	user = User.new(user_params)
       	if user.save
-            @http_response = user
+            @http_response = {
+                      :result => "success",
+                      :message => "Registered"
+                      }.to_json
             @http_status = 200
             status = true
+
       	else
         		@http_response = {
                       :result => "failed",
