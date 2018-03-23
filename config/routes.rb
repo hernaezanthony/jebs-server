@@ -20,6 +20,7 @@ Rails.application.routes.draw do
     post '/item/borrowItem' => 'item#borrowItem', :as => 'borrowItem'
     post '/item/returnItem' => 'item#returnItem', :as => 'returnItem'
     post '/item/searchBorrowedItem' => 'item#searchBorrowedItem', :as => 'searchBorrowedItem'
+    post '/item/listBorrowedItem' => 'item#listBorrowedItem', :as => 'listBorrowedItem'
     
 
   end
